@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AZD Global — More jobs closed. Fewer leads wasted.</title>
+<meta name="description" content="AZD builds the data, calling, follow-up, appointment-setting, CRM and contact-center system that keeps your pipeline moving while you run the business. Roofing, exteriors, solar, insurance, real estate, HVAC."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+ --mineral:#F4F2EC;--mineral-2:#E9E7DF;--ink:#0E1116;--ink-soft:#20242B;
+ --navy:#0B1B2B;--navy-panel:#102A40;--charcoal:#14181D;
+ --gray:#8A93A1;--silver:#C4CCD6;
+ --cobalt:#2C6BFF;--cyan:#38E1D6;--emerald:#12B981;--amber:#E0A537;--red:#E5675A;
+ --maxw:1220px;--ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--mineral);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.serif{font-family:'Manrope',system-ui,sans-serif;font-weight:700;letter-spacing:-.022em;line-height:1.03}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 30px}
+.tmk{font-size:.5em;vertical-align:super;opacity:.65}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gray)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.staging{background:var(--ink);color:var(--silver);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:7px 12px}
+.staging b{color:var(--cyan)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;padding:14px 22px;border-radius:12px;border:none;cursor:pointer;transition:transform .2s var(--ease),box-shadow .25s,background .2s;font-family:'Manrope',system-ui,sans-serif}
+.btn-primary{background:var(--cobalt);color:#fff;box-shadow:0 12px 30px -12px rgba(44,107,255,.7)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-solid-cyan{background:var(--cyan);color:var(--navy)}
+.btn-solid-cyan:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1px solid currentColor;color:inherit;opacity:.85}
+.btn-ghost:hover{opacity:1;transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:var(--mineral)}
+.btn-ink:hover{transform:translateY(-2px)}
+.btn-call{background:transparent;border:1px solid var(--emerald);color:var(--emerald)}
+.btn-call:hover{background:var(--emerald);color:#04140d}
+
+/* nav */
+header{position:sticky;top:0;z-index:60;background:rgba(244,242,236,.75);backdrop-filter:blur(16px);border-bottom:1px solid rgba(14,17,22,.08);transition:background .4s,color .4s,border-color .4s}
+header.on-dark{background:rgba(11,27,43,.6);border-color:rgba(255,255,255,.08);color:var(--mineral)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:20px}
+.navlinks{display:flex;gap:26px;font-size:14px;font-weight:600}
+.navlinks a{opacity:.8}.navlinks a:hover{opacity:1}
+.navphone{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.06em;border:1px solid currentColor;border-radius:100px;padding:8px 15px;opacity:.9}
+.navphone:hover{background:var(--emerald);color:#04140d;border-color:var(--emerald);opacity:1}
+
+/* HERO */
+#hero{background:var(--navy);color:var(--mineral);position:relative;overflow:hidden;padding:74px 0 60px;min-height:94vh;display:flex;align-items:center}
+#hero .field{position:absolute;inset:0;opacity:.85;pointer-events:none}
+#hero .wrap{position:relative;z-index:2}
+#hero .eyebrow{color:var(--cyan)}
+#hero h1{font-size:clamp(38px,6.4vw,78px);max-width:19ch;margin:22px 0 22px}
+#hero h1 .hl{color:var(--cyan)}
+#hero .sub{font-size:clamp(17px,1.9vw,20px);color:var(--silver);max-width:60ch;margin-bottom:32px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:34px}
+.ind-strip{border-top:1px solid rgba(255,255,255,.12);padding-top:22px}
+.ind-strip .lbl{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);margin-bottom:12px}
+.ind-tabs{display:flex;flex-wrap:wrap;gap:10px}
+.ind-tab{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.02em;color:var(--silver);border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.02);border-radius:100px;padding:10px 16px;cursor:pointer;transition:all .2s var(--ease)}
+.ind-tab:hover{border-color:var(--cyan);color:#fff}
+.ind-tab.on{background:var(--cyan);color:var(--navy);border-color:var(--cyan);font-weight:600}
+
+/* INDUSTRY dynamic panel */
+#vertical{background:var(--navy);color:var(--mineral);border-top:1px solid rgba(255,255,255,.08);padding:0 0 96px}
+.vpanel{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center;padding-top:20px}
+.vpanel .vk{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.vpanel h2{font-size:clamp(28px,4vw,46px);margin-bottom:20px;max-width:20ch}
+.vpanel .pain{font-size:17px;color:var(--silver);margin-bottom:22px;max-width:56ch}
+.vpanel .outcome{font-size:16px;color:var(--mineral);border-left:2px solid var(--cyan);padding-left:16px;margin-bottom:22px;max-width:58ch}
+.sol-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.sol-chips span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;color:var(--silver);border:1px solid rgba(255,255,255,.16);border-radius:7px;padding:7px 11px}
+.payoff{font-size:14px;color:var(--amber);font-family:'JetBrains Mono',ui-monospace,monospace;margin-bottom:24px;max-width:56ch;line-height:1.7}
+/* visual side */
+.vvisual{background:var(--navy-panel);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px;position:relative;overflow:hidden;min-height:340px}
+.vvisual .vhint{position:absolute;top:14px;right:16px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);border:1px dashed rgba(255,255,255,.24);border-radius:5px;padding:3px 7px}
+.vflow{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.vstage{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 14px}
+.vstage .ic{width:30px;height:30px;border-radius:8px;background:rgba(56,225,214,.14);color:var(--cyan);display:grid;place-items:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;flex:none}
+.vstage .t{font-size:13.5px}.vstage .t b{display:block;font-weight:600}.vstage .t span{color:var(--gray);font-size:12px}
+.vstage .st{margin-left:auto;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald)}
+
+/* generic act */
+.act{padding:104px 0}
+.act-mineral{background:var(--mineral)}.act-mineral-2{background:var(--mineral-2)}
+.act-dark{background:var(--navy);color:var(--mineral)}.act-ink{background:var(--ink);color:var(--mineral)}
+.sec-eyebrow{margin-bottom:14px}
+.big-line{font-size:clamp(30px,4.6vw,54px);max-width:20ch}
+
+/* OWNER PAIN */
+#owner{background:var(--ink);color:var(--mineral)}
+#owner .roles{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 28px}
+#owner .roles span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--silver);border:1px solid rgba(255,255,255,.14);border-radius:7px;padding:8px 12px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:1.5px}
+#owner p.lead{font-size:18px;color:var(--silver);max-width:60ch;margin-bottom:14px}
+#owner p.turn{font-size:18px;color:var(--mineral);max-width:60ch;margin-bottom:26px}
+
+/* three outcomes */
+.outs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:12px}
+.outc{padding:26px;border-radius:14px;background:#fff;border:1px solid rgba(14,17,22,.1)}
+.outc .n{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:var(--cobalt)}
+.outc h3{font-family:'Manrope',system-ui,sans-serif;font-weight:600;font-size:22px;margin:10px 0 8px}
+.outc p{font-size:14px;color:var(--ink-soft)}
+
+/* PRODUCT positioning */
+.prod{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;margin-top:20px}
+.prod .p{background:var(--navy);padding:30px}
+.prod .p .k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+.prod .p h3{font-family:'Manrope',system-ui,sans-serif;font-weight:600;font-size:26px;margin:12px 0 10px;color:var(--mineral)}
+.prod .p p{font-size:14.5px;color:var(--silver)}
+.pl-holder{margin-top:22px;background:var(--navy-panel);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.pl-holder .frame{flex:1;min-width:200px;height:120px;border-radius:10px;position:relative;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:22px 22px;border:1px dashed rgba(255,255,255,.2);display:grid;place-items:center}
+.pl-holder .frame span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);text-align:center;padding:0 10px}
+.pl-note{margin-top:16px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--gray);max-width:78ch;line-height:1.7}
+
+/* CALCULATOR */
+#calc{background:var(--mineral-2)}
+.calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px;align-items:start}
+.calc-form{background:#fff;border:1px solid rgba(14,17,22,.1);border-radius:16px;padding:26px}
+.cf{margin-bottom:16px}
+.cf label{display:block;font-size:13px;font-weight:600;margin-bottom:7px}
+.cf label span{color:var(--gray);font-weight:400;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px}
+.cf input{width:100%;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:15px;padding:11px 13px;border:1px solid rgba(14,17,22,.16);border-radius:9px;background:var(--mineral)}
+.cf input:focus{outline:none;border-color:var(--cobalt);background:#fff}
+.calc-out{background:var(--navy);color:var(--mineral);border-radius:16px;padding:28px;position:sticky;top:88px}
+.calc-out .k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px}
+.calc-metric{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.calc-metric .lbl{font-size:13px;color:var(--silver)}
+.calc-metric .val{font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:34px;margin-top:4px}
+.calc-metric .val.leak{color:var(--amber)}
+.calc-metric .val.close{color:var(--cyan)}
+.calc-metric .val.pay{color:var(--emerald)}
+.calc-disc{margin-top:16px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:var(--gray);line-height:1.7}
+
+/* FREEDOM */
+#freedom{background:var(--navy);color:var(--mineral)}
+.moments{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 26px}
+.moment{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;color:var(--silver);border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:9px 15px}
+#freedom p.f{font-size:19px;color:var(--mineral);max-width:56ch;margin-bottom:10px}
+#freedom p.f2{font-size:17px;color:var(--silver);max-width:56ch;margin-bottom:26px}
+
+/* CONTACT selector already-picked recap + big CTA */
+#contact{background:var(--mineral)}
+.contact-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+
+/* footer */
+footer{background:var(--ink);color:var(--gray);padding:56px 0 96px;font-size:14px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.09)}
+footer h4{font-family:'JetBrains Mono',ui-monospace,monospace;color:var(--silver);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+footer a{display:block;margin-bottom:9px;opacity:.85}footer a:hover{opacity:1;color:var(--cyan)}
+.fbrand{display:flex;align-items:center;gap:12px;font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:20px;color:var(--mineral);margin-bottom:14px}
+.fbottom{padding-top:22px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* MOBILE STICKY BAR */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;background:var(--ink);border-top:1px solid rgba(255,255,255,.12)}
+.mbar a{flex:1;text-align:center;padding:13px 6px;color:var(--mineral);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.04em;display:flex;flex-direction:column;align-items:center;gap:3px}
+.mbar a.fix{background:var(--cyan);color:var(--navy);font-weight:600}
+.mbar a+a{border-left:1px solid rgba(255,255,255,.12)}
+
+/* MODAL forms */
+.modal{position:fixed;inset:0;z-index:90;background:rgba(11,17,22,.6);backdrop-filter:blur(4px);display:none;align-items:flex-end;justify-content:center}
+.modal.open{display:flex}
+.sheet{background:var(--mineral);width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:20px 20px 0 0;padding:28px 26px 30px}
+@media(min-width:640px){.modal{align-items:center}.sheet{border-radius:20px}}
+.sheet .sk{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt)}
+.sheet h3{font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:26px;margin:8px 0 6px}
+.sheet .sd{font-size:14px;color:var(--ink-soft);margin-bottom:18px}
+.sheet .field{margin-bottom:13px}
+.sheet label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+.sheet input,.sheet select{width:100%;font-size:14px;padding:11px 12px;border:1px solid rgba(14,17,22,.16);border-radius:9px;background:#fff;font-family:'Manrope',system-ui,sans-serif}
+.sheet .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sheet .close{float:right;cursor:pointer;color:var(--gray);font-size:22px;line-height:1;border:none;background:none}
+.sheet .submit{width:100%;margin-top:10px}
+.sheet .done{display:none;text-align:center;padding:26px 8px}
+.sheet .done.on{display:block}
+.sheet .done .big{font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:24px;margin:10px 0}
+.sheet .done .sm{font-size:14px;color:var(--ink-soft)}
+.sheet .stagetag{margin-top:14px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;color:var(--gray)}
+
+/* product CTAs */
+.pcta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tlink{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:.04em;border:1px solid rgba(255,255,255,.22);color:var(--mineral);border-radius:100px;padding:8px 13px;cursor:pointer;background:transparent;transition:all .2s var(--ease);display:inline-block}
+.tlink:hover{border-color:var(--cyan);color:var(--cyan)}
+.tlink.solid{background:var(--cyan);color:var(--navy);border-color:var(--cyan);font-weight:600}
+.tlink.solid:hover{color:var(--navy)}
+/* build process */
+#build-proc{background:var(--mineral)}
+.proc{position:relative;margin-top:34px}
+.proc-rail{position:absolute;left:0;right:0;top:12px;height:2px;background:rgba(14,17,22,.14)}
+.proc-rail i{position:absolute;left:0;top:0;height:2px;width:0;background:linear-gradient(90deg,var(--cobalt),var(--cyan));transition:width 1.4s var(--ease)}
+.proc.in .proc-rail i{width:100%}
+.proc-track{display:grid;grid-template-columns:repeat(6,1fr);gap:0}
+.proc-step{position:relative;padding:26px 16px 0}
+.proc-step::before{content:"";position:absolute;top:7px;left:16px;width:12px;height:12px;border-radius:50%;background:var(--mineral);border:2px solid var(--cobalt)}
+.proc-step .k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:var(--cobalt)}
+.proc-step h3{font-family:'Manrope',system-ui,sans-serif;font-weight:600;font-size:20px;margin:9px 0 7px}
+.proc-step p{font-size:13px;color:var(--ink-soft)}
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.pf{background:var(--navy-panel);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:22px}
+.pf .tick{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald)}
+.pf h4{font-family:'Manrope',system-ui,sans-serif;font-weight:600;font-size:18px;margin:9px 0 7px;color:var(--mineral)}
+.pf p{font-size:13px;color:var(--silver)}
+/* founder */
+#founder{background:var(--navy);color:var(--mineral)}
+
+@media(max-width:920px){
+ .vpanel{grid-template-columns:1fr}
+ .outs,.prod{grid-template-columns:1fr}
+ .calc-wrap{grid-template-columns:1fr}
+ .calc-out{position:static}
+ .navlinks{display:none}
+ .mbar{display:flex}
+ footer{padding-bottom:96px}
+ .fg{grid-template-columns:1fr 1fr}
+ .proc-track{grid-template-columns:1fr;gap:2px}
+ .proc-rail{left:19px;right:auto;top:0;bottom:0;width:2px;height:auto}
+ .proc-rail i{width:2px;height:0;transition:height 1.4s var(--ease)}
+ .proc.in .proc-rail i{height:100%;width:2px}
+ .proc-step{padding:18px 0 18px 44px}
+ .proc-step::before{top:20px;left:13px}
+ .proof{grid-template-columns:1fr}
+ .act{padding:72px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+:root{--violet:#7C5CFF}
+.galaxy,#hero.galaxy,#products.galaxy{position:relative;background:radial-gradient(1200px 700px at 78% -12%,rgba(44,107,255,.20),transparent 60%),radial-gradient(1000px 800px at 10% 8%,rgba(124,92,255,.16),transparent 58%),radial-gradient(900px 600px at 50% 120%,rgba(56,225,214,.10),transparent 60%),linear-gradient(180deg,#0a1524,#070b12)}
+canvas.stars{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#products .wrap{position:relative;z-index:2}
+.brand,.fbrand{font-weight:800}
+.hl-lines{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.hl-lines span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--silver);border:1px solid rgba(255,255,255,.16);border-radius:100px;padding:7px 13px;background:rgba(255,255,255,.02)}
+.guarantee{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:linear-gradient(120deg,rgba(18,185,129,.12),rgba(44,107,255,.10));border:1px solid rgba(56,225,214,.35);border-radius:16px;padding:20px 22px;margin:8px 0 30px}
+.gbadge{font-weight:800;font-size:15px;color:var(--cyan);border:1px solid var(--cyan);border-radius:100px;padding:8px 15px;white-space:nowrap}
+.guarantee .gtxt{flex:1;min-width:260px;font-size:14.5px;color:var(--silver)}
+.pkgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:8px 0 34px}
+.pkg{background:rgba(16,42,64,.55);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .3s var(--ease),border-color .3s;backdrop-filter:blur(3px)}
+.pkg:hover{transform:translateY(-6px);border-color:var(--cyan)}
+.pkg .pn{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+.pkg h3{font-weight:800;font-size:20px;margin:8px 0 6px;color:var(--mineral)}
+.pkg .pr{font-family:'Manrope',sans-serif;font-size:15px;color:var(--mineral);font-weight:800;margin-bottom:6px}
+.pkg .bf{font-size:12.5px;color:var(--gray);margin-bottom:14px}
+.pkg .ec{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.pkg .ec span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;color:var(--silver);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:4px 8px}
+.pkg .no{font-size:11.5px;color:var(--gray);margin-bottom:14px}
+.pkg .btn{margin-top:auto}
+.pkg.feat{border-color:rgba(124,92,255,.6);box-shadow:0 0 0 1px rgba(124,92,255,.3)}
+#builder{background:rgba(7,11,18,.6);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px;margin-top:8px}
+#builder h3{font-weight:800;font-size:22px;color:var(--mineral);margin-bottom:4px}
+#builder .bsub{font-size:14px;color:var(--gray);margin-bottom:18px}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.bf-field label{display:block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--silver);margin-bottom:6px}
+.bf-field input,.bf-field select{width:100%;font-size:13.5px;padding:10px 11px;border:1px solid rgba(255,255,255,.16);border-radius:9px;background:rgba(255,255,255,.03);color:var(--mineral);font-family:'Manrope',sans-serif}
+.bf-field input:focus,.bf-field select:focus{outline:none;border-color:var(--cyan)}
+.blueprint{margin-top:20px;background:linear-gradient(120deg,rgba(44,107,255,.12),rgba(124,92,255,.10));border:1px solid rgba(56,225,214,.35);border-radius:14px;padding:22px;display:none}
+.blueprint.on{display:block}
+.blueprint .bk{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
+.blueprint .brow{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:13.5px;color:var(--silver)}
+.blueprint .brow .v{color:var(--mineral);text-align:right;font-family:'JetBrains Mono',monospace;font-size:12.5px}
+#gterms{background:var(--charcoal);color:var(--mineral)}
+.gt-list{columns:2;column-gap:30px;margin-top:16px;padding-left:18px}
+.gt-list li{break-inside:avoid;margin-bottom:9px;font-size:13.5px;color:var(--silver)}
+@media(max-width:920px){.pkgs{grid-template-columns:1fr 1fr}.bgrid{grid-template-columns:1fr}.gt-list{columns:1}}
+@media(max-width:560px){.pkgs{grid-template-columns:1fr}}
+</style></head><body>
+
+<div class="staging">Staging preview · <b>not the live site</b> · azdglobal.com will not change until you approve</div>
+
+<header id="header"><div class="wrap">
+ <a class="brand" href="#top" aria-label="AZD Global home">
+  
+  AZD&nbsp;Global
+ </a>
+ <nav class="navlinks">
+  <a href="#vertical">Your industry</a>
+  <a href="#owner">The problem</a>
+  <a href="#products">How it works</a>
+  <a href="#calc">Lost-lead calculator</a>
+  <a href="services.html">Services</a>
+  <a href="industries.html">Industries</a>
+  <a href="about.html">About</a>
+ </nav>
+ <a class="navphone" href="tel:+18336619292">Call AZD · (833) 661-9292</a>
+</div></header>
+
+<!-- HERO -->
+<section id="hero" class="galaxy"><a id="top"></a>
+ <canvas class="stars" data-stars></canvas>
+ <div class="wrap">
+  <div class="eyebrow">AZD Global — revenue &amp; contact-center systems</div>
+  <h1 class="serif">More jobs closed. <span class="hl">Fewer leads wasted.</span> A business that runs when you leave the room.</h1>
+  <p class="sub">AZD builds the data, calling, follow-up, appointment-setting, CRM, and contact-center system that keeps your pipeline moving while you're selling, managing crews, sitting at dinner, or watching your kid's soccer game.</p>
+  <div class="cta-row">
+   <button class="btn btn-primary" data-scroll="#calc">Show Me Where I'm Losing Jobs</button>
+   <button class="btn btn-solid-cyan" data-scroll="#products">Build My Revenue Machine</button>
+   <a class="btn btn-call" href="tel:+18336619292">Call Amit Now</a>
+   <a class="btn btn-ghost" href="tel:+18336619292">Talk Directly to Amit</a>
+   <a class="btn btn-ghost" href="sms:+18336619292">Text AZD</a>
+   <a class="btn btn-ghost" data-scroll="#contact">Book a Call</a>
+  </div>
+  <div class="ind-strip">
+   <div class="lbl">Pick your world — the page adapts to you</div>
+   <div class="ind-tabs" id="indTabs">
+    <button class="ind-tab on" data-ind="roofing">Roofing</button>
+    <button class="ind-tab" data-ind="exteriors">Exteriors</button>
+    <button class="ind-tab" data-ind="solar">Solar</button>
+    <button class="ind-tab" data-ind="insurance">Insurance</button>
+    <button class="ind-tab" data-ind="realestate">Real Estate</button>
+    <button class="ind-tab" data-ind="hvac">HVAC</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- OWNER PAIN -->
+<section id="owner" class="act" data-theme="dark"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal" style="color:var(--cyan)">The owner trap</div>
+ <h2 class="serif big-line reveal">You didn't start a company to become its most overworked employee.</h2>
+ <p class="lead reveal" style="margin-top:22px">You started it to make money, build something valuable, and get out of the rat race.</p>
+ <div class="roles reveal">
+  <span>after-hours receptionist</span><span>lead chaser</span><span>CRM janitor</span><span>dispatcher</span><span>sales manager</span><span>the one checking if anyone called yesterday's leads</span>
+ </div>
+ <p class="turn reveal">AZD builds the machinery that takes those jobs off your back.</p>
+ <button class="btn btn-solid-cyan reveal" data-scroll="#vertical">Take Me Out of the Daily Chaos</button>
+</div></section>
+
+<!-- FREEDOM -->
+<section id="freedom" class="act" data-theme="dark"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal" style="color:var(--cyan)">The point of all of it</div>
+ <h2 class="serif big-line reveal">The system should keep working when you're not.</h2>
+ <div class="moments reveal">
+  <span>inspecting a roof</span><span>meeting a homeowner</span><span>managing a crew</span><span>driving between appointments</span><span>eating dinner</span><span>at a kid's soccer game</span><span>asleep</span>
+ </div>
+ <p class="f reveal">The lead is answered, routed, followed up, scheduled, tracked, and handed back to the right person.</p>
+ <p class="f2 reveal">You didn't build a company so the company could own you.</p>
+ <button class="btn btn-solid-cyan reveal" data-scroll="#vertical">Build the Business That Lets Me Leave</button>
+</div></section>
+
+<!-- THREE OUTCOMES -->
+<section class="act act-mineral" data-theme="light"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal">What you actually get</div>
+ <h2 class="serif big-line reveal" style="margin-bottom:8px">Three outcomes. Nothing abstract.</h2>
+ <div class="outs">
+  <div class="outc reveal"><div class="n">01</div><h3 class="serif">More jobs closed</h3><p>More of the opportunities you already pay for get worked, followed up, and converted into revenue.</p></div>
+  <div class="outc reveal"><div class="n">02</div><h3 class="serif">Fewer leads wasted</h3><p>Missed calls, aging leads, unfinished estimates and dead lists stop quietly draining the business.</p></div>
+  <div class="outc reveal"><div class="n">03</div><h3 class="serif">Runs without you</h3><p>The pipeline keeps moving when you step away — no owner babysitting every lead to keep it alive.</p></div>
+ </div>
+</div></section>
+
+<!-- INDUSTRY DYNAMIC PANEL -->
+<section id="vertical" data-theme="dark"><div class="wrap">
+ <div class="vpanel">
+  <div>
+   <div class="vk" id="vKick">Roofing</div>
+   <h2 class="serif" id="vHead"></h2>
+   <p class="pain" id="vPain"></p>
+   <div class="outcome" id="vOut"></div>
+   <div class="sol-chips" id="vChips"></div>
+   <p class="payoff" id="vPay"></p>
+   <div class="cta-row">
+    <button class="btn btn-solid-cyan" id="vCta"></button>
+    <a class="btn btn-ghost" href="tel:+18336619292">Or just call Amit</a>
+   </div>
+  </div>
+  <div class="vvisual">
+   <div class="vhint">real PowerLine™ screenshot pending recompile</div>
+   <div class="vk" style="color:var(--gray)">What the machine does for you</div>
+   <div class="vflow" id="vFlow"></div>
+  </div>
+ </div>
+</div></section>
+
+<!-- EXCLUSIVE TERRITORY APPOINTMENT CAMPAIGNS -->
+<section id="campaigns" class="act galaxy" data-theme="dark">
+ <canvas class="stars" data-stars></canvas>
+ <div class="wrap" style="position:relative;z-index:2">
+  <div class="eyebrow" style="color:var(--cyan)">Exclusive Territory Appointment Campaigns</div>
+  <h2 class="serif" style="max-width:20ch;color:var(--mineral)">What if the leads were built for you instead of resold to you?</h2>
+  <p style="font-size:18px;color:var(--silver);max-width:64ch;margin-top:14px">Stop buying the same lead as five other companies. Mark your zone and your customer filters. AZD builds the audience, runs the outbound campaign, qualifies the opportunity, confirms the appointment, and places it directly into your calendar.</p>
+  <div class="hl-lines">
+   <span>Your territory. Your criteria. Your campaign.</span><span>No recycled marketplace leads.</span><span>We create the opportunity instead of reselling it.</span><span>From selected ZIP codes to confirmed conversations.</span>
+  </div>
+  <div class="guarantee">
+   <div class="gbadge">AZD Show-Up Guarantee&trade;</div>
+   <div class="gtxt"><b>Guaranteed to show — or you don't pay for that appointment.</b> If a qualifying appointment doesn't attend under the agreed campaign terms, you're not charged for it, or you get an approved replacement, per the signed service agreement.</div>
+   <button class="btn btn-ghost" data-scroll="#gterms">See the Show-Up Guarantee</button>
+  </div>
+  <div class="pkgs">
+   <div class="pkg"><div class="pn">Custom Campaign</div><h3>Appointment Setting</h3><div class="pr">$75 / qualified meeting · or $2,000 / mo</div><div class="bf">Flexible, ongoing exclusive outbound campaign.</div><div class="ec"><span>Territory</span><span>Filters</span><span>Calling</span><span>Qualify</span><span>Confirm</span><span>Show-up protection</span></div><div class="no">No shared marketplace leads.</div><button class="btn btn-solid-cyan" data-scroll="#builder">Build My Territory Campaign</button></div>
+   <div class="pkg"><div class="pn">Market Entry Pack</div><h3>12 appointments</h3><div class="pr">$2,100</div><div class="bf">Test a new territory, offer, or service area.</div><div class="ec"><span>Dedicated setup</span><span>Scheduling</span><span>Reporting</span><span>Show-up protection</span></div><div class="no">No generic list blast.</div><button class="btn btn-solid-cyan" data-scroll="#builder">Build My Territory Campaign</button></div>
+   <div class="pkg"><div class="pn">Pipeline Growth Pack</div><h3>25 appointments</h3><div class="pr">$3,625</div><div class="bf">A steady calendar for active sales teams.</div><div class="ec"><span>Custom filters</span><span>Confirmation</span><span>CRM delivery</span><span>Show-up protection</span></div><div class="no">No competing for the same inquiry.</div><button class="btn btn-solid-cyan" data-scroll="#builder">Build My Territory Campaign</button></div>
+   <div class="pkg feat"><div class="pn">Territory Domination Pack</div><h3>50 appointments</h3><div class="pr">$6,000</div><div class="bf">Enter or aggressively work a defined market.</div><div class="ec"><span>Exclusive zone</span><span>No-show recovery</span><span>Full reporting</span><span>Show-up protection</span></div><div class="no">Your market. Your filters. Your appointments.</div><button class="btn btn-solid-cyan" data-scroll="#builder">Build My Territory Campaign</button></div>
+  </div>
+  <div id="builder">
+   <h3>Build your exclusive campaign</h3>
+   <div class="bsub">Choose your market and filters — we'll draft a campaign blueprint and recommend the right package.</div>
+   <div class="bgrid">
+    <div class="bf-field"><label>Industry</label><select id="b_ind"><option value="roofing">Roofing</option><option value="exteriors">Exteriors</option><option value="solar">Solar</option><option value="insurance">Insurance</option><option value="realestate">Real estate</option><option value="hvac">HVAC</option></select></div>
+    <div class="bf-field"><label>State</label><input id="b_state" placeholder="e.g. TX"/></div>
+    <div class="bf-field"><label>ZIP codes</label><input id="b_zip" placeholder="75201, 75202…"/></div>
+    <div class="bf-field"><label>Radius (mi)</label><input id="b_radius" type="number" placeholder="25"/></div>
+    <div class="bf-field"><label>Property type</label><input id="b_ptype" placeholder="single-family…"/></div>
+    <div class="bf-field"><label>Homeowner status</label><select id="b_owner"><option>Homeowners only</option><option>Homeowners + renters</option></select></div>
+    <div class="bf-field"><label>Property value</label><input id="b_value" placeholder="$300k+"/></div>
+    <div class="bf-field"><label>Estimated equity</label><input id="b_equity" placeholder="40%+"/></div>
+    <div class="bf-field"><label>Ownership tenure</label><input id="b_tenure" placeholder="5y+"/></div>
+    <div class="bf-field"><label>Roof age (roofing)</label><input id="b_roof" placeholder="15y+"/></div>
+    <div class="bf-field"><label>Service type</label><input id="b_service" placeholder="replacement, install…"/></div>
+    <div class="bf-field"><label>Target customer profile</label><input id="b_profile" placeholder="who is ideal"/></div>
+    <div class="bf-field"><label>Appointment target</label><input id="b_qty" type="number" placeholder="25"/></div>
+    <div class="bf-field"><label>Campaign start</label><input id="b_start" type="date"/></div>
+    <div class="bf-field"><label>Preferred times</label><input id="b_times" placeholder="weekday afternoons"/></div>
+    <div class="bf-field"><label>Sales-team capacity</label><input id="b_cap" placeholder="appointments/week you can work"/></div>
+    <div class="bf-field"><label>CRM</label><input id="b_crm" placeholder="which CRM"/></div>
+    <div class="bf-field"><label>Calendar</label><input id="b_cal" placeholder="Google, Outlook…"/></div>
+    <div class="bf-field"><label>Confirmation method</label><select id="b_conf"><option>Call + SMS</option><option>SMS only</option><option>Email + SMS</option></select></div>
+   </div>
+   <button class="btn btn-solid-cyan" id="b_go" style="margin-top:16px">Build My Exclusive Campaign</button>
+   <div class="blueprint" id="b_out">
+    <div class="bk">Your campaign blueprint</div>
+    <div id="b_rows"></div>
+    <div class="cta-row" style="margin-top:16px"><button class="btn btn-primary" data-openform>Request final approval</button><a class="btn btn-ghost" href="tel:+18336619292">Talk to Amit</a></div>
+   </div>
+  </div>
+  <div class="cta-row" style="margin-top:30px"><button class="btn btn-solid-cyan" data-scroll="#builder">Build My Territory Campaign</button><button class="btn btn-ghost" data-scroll="#gterms">See the Show-Up Guarantee</button></div>
+ </div>
+</section>
+
+<!-- SHOW-UP GUARANTEE TERMS -->
+<section id="gterms" class="act" data-theme="dark"><div class="wrap">
+ <div class="eyebrow" style="color:var(--cyan)">AZD Show-Up Guarantee&trade; — terms</div>
+ <h2 class="serif" style="color:var(--mineral);max-width:22ch">Advertised loudly. Defined clearly.</h2>
+ <p style="color:var(--silver);max-width:66ch;margin-top:12px">Guaranteed to show — or you don't pay for that appointment. If a qualifying appointment doesn't attend under the agreed campaign terms, the client isn't charged for that appointment or receives an approved replacement, per the signed service agreement. Key terms:</p>
+ <ul class="gt-list">
+  <li>What counts as a qualified appointment (meets agreed filters + a set time).</li>
+  <li>What counts as a show (present &amp; available for the agreed window).</li>
+  <li>Required confirmation process before each appointment.</li>
+  <li>Required appointment window inside your stated hours.</li>
+  <li>Rescheduling and client-cancellation rules.</li>
+  <li>Client availability &amp; sales-capacity requirements.</li>
+  <li>Invalid / unreachable appointment handling.</li>
+  <li>Duplicate-customer de-duplication.</li>
+  <li>Territory &amp; service eligibility.</li>
+  <li>Replacement vs. non-payment (per package).</li>
+  <li>Client-caused exceptions.</li>
+  <li>Documentation &amp; window required to report a no-show.</li>
+ </ul>
+ <p class="mono" style="color:var(--gray);font-size:12px;margin-top:16px">Full written terms are provided with your service agreement. Draft business terms — subject to counsel review.</p>
+</div></section>
+
+<!-- PRODUCT POSITIONING (pain first, products fourth) -->
+
+<section id="products" class="act act-dark galaxy" data-theme="dark"><canvas class="stars" data-stars></canvas><div class="wrap" style="position:relative;z-index:2">
+ <div class="eyebrow sec-eyebrow reveal" style="color:var(--cyan)">Now — how it's built</div>
+ <h2 class="serif big-line reveal" style="margin-bottom:10px">One machine. Three parts.</h2>
+ <div class="prod reveal">
+  <div class="p"><div class="k">Data in</div><h3 class="serif">TruuOwner<span class="tmk">™</span></h3><p><b>The right prospects enter the machine.</b> Targeted homeowner &amp; property data, scrubbed and ready to work — not another bought list of renters and dead numbers.</p><div class="pcta"><button class="tlink solid" data-openform>Get a Data Sample</button><button class="tlink" data-openform>Build My Audience</button></div></div>
+  <div class="p"><div class="k">Movement</div><h3 class="serif">PowerLine<span class="tmk">™</span></h3><p><b>Every conversation. One command center.</b> Calls, messages, voicemail, contacts, campaigns, agents and follow-up in one place — nothing lost between ringing and revenue.</p><div class="pcta"><button class="tlink solid" data-scroll="#products">Open PowerLine Preview</button><a class="tlink" href="https://github.com/awwmit-69/Powerline/releases/download/windows-preview/PowerLine-Windows-Preview.zip">See the Windows App</a></div></div>
+  <div class="p"><div class="k">Installed</div><h3 class="serif">Contact Center Buildout</h3><p><b>We don't recommend the stack. We build the damn stack.</b> Phones, routing, campaigns, CRM stages, scripts, reporting, agent workflows, human handoff — and AI where it earns its seat.</p><div class="pcta"><button class="tlink solid" data-openform>Build My Contact Center</button><button class="tlink" data-openform>Request a Written Scope</button><a class="tlink" href="tel:+18336619292">Talk to Amit</a></div></div>
+ </div>
+ <div class="pl-holder reveal">
+  <div class="frame"><span>PowerLine™ — Home dashboard<br/>real screenshot · demo data · pending recompile</span></div>
+  <div class="frame"><span>PowerLine™ — Dialpad / Call state<br/>real screenshot · demo data · pending recompile</span></div>
+  <div class="frame"><span>PowerLine™ — Campaigns &amp; AI Agents<br/>real screenshot · demo data · pending recompile</span></div>
+ </div>
+ <p class="pl-note reveal">// Honest note: PowerLine frames are labeled placeholders. Real screenshots drop in after the app is re-themed to this palette and recompiled. Nothing here claims live calling, VoIP registration, or real call totals — that shows only after two-way audio is verified inside PowerLine.</p>
+</div></section>
+
+<!-- BUILD PROCESS -->
+<section id="build-proc" class="act" data-theme="light"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal">The build</div>
+ <h2 class="serif big-line reveal">From scattered tools to a working operation.</h2>
+ <p class="reveal" style="max-width:60ch;margin-top:14px;color:var(--ink-soft);font-size:16px">No disappearing contractor. No mystery handoff. No strategy document gathering dust while your leads decay.</p>
+ <div class="proc reveal" id="proc2">
+  <div class="proc-rail"><i></i></div>
+  <div class="proc-track">
+   <div class="proc-step"><div class="k">01</div><h3>Discover</h3><p>Scope the leaks, quoted in writing.</p></div>
+   <div class="proc-step"><div class="k">02</div><h3>Architect</h3><p>Design the machine: data, routing, follow-up.</p></div>
+   <div class="proc-step"><div class="k">03</div><h3>Build</h3><p>Data delivered, PBX + dialer configured.</p></div>
+   <div class="proc-step"><div class="k">04</div><h3>Test</h3><p>End-to-end before a single lead runs.</p></div>
+   <div class="proc-step"><div class="k">05</div><h3>Launch</h3><p>Campaigns, extensions, reporting live.</p></div>
+   <div class="proc-step"><div class="k">06</div><h3>Operate</h3><p>We stay close enough to know when it breaks.</p></div>
+  </div>
+ </div>
+ <div class="cta-row reveal" style="margin-top:30px"><button class="btn btn-primary" data-openform>Start the Build</button></div>
+</div></section>
+
+<!-- PROOF -->
+<section id="proof" class="act act-dark" data-theme="dark"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal" style="color:var(--cyan)">Receipts</div>
+ <h2 class="serif big-line reveal">Built, not brainstormed.</h2>
+ <div class="proof reveal">
+  <div class="pf"><div class="tick">shipped</div><h4>PowerLine&trade; Windows build</h4><p>A compiled Windows desktop app — download, extract, run powerline.exe.</p></div>
+  <div class="pf"><div class="tick">shipped</div><h4>PowerLine&trade; web build</h4><p>Live Flutter web build of the same command center.</p></div>
+  <div class="pf"><div class="tick">built</div><h4>Backend + data structure</h4><p>Working API/store and a structured TruuOwner&trade; export schema.</p></div>
+  <div class="pf"><div class="tick">built</div><h4>Buildout architecture</h4><p>Dialer / PBX / CRM / routing / reporting, installed and handed over.</p></div>
+  <div class="pf"><div class="tick">real screens</div><h4>Actual app screens</h4><p>Dashboard, dialpad, messages, calls, voicemail, contacts, campaigns, AI agents.</p></div>
+  <div class="pf"><div class="tick">registered</div><h4>Real entities</h4><p>AZD Global Enterprises, Inc. — Delaware C-Corporation. Public office: 244 5th Ave, STE 1855, New York, NY 10001.</p></div>
+ </div>
+ <div class="cta-row reveal" style="margin-top:30px"><a class="btn btn-solid-cyan" href="https://github.com/awwmit-69/Powerline/releases/download/windows-preview/PowerLine-Windows-Preview.zip">See What We've Built</a><button class="btn btn-ghost" data-openform>Discuss My Project</button></div>
+</div></section>
+
+<!-- CALCULATOR -->
+<section id="calc" class="act" data-theme="light"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal">The math</div>
+ <h2 class="serif big-line reveal">It may look like a serious investment. So does every leak you keep ignoring.</h2>
+ <p class="reveal" style="max-width:64ch;margin-top:16px;color:var(--ink-soft);font-size:16px">One roofing contract. One exterior project. One solar install. A handful of bound policies. One closing. One HVAC replacement. Depending on your margins, recovering only a small number of extra opportunities can offset a meaningful part — or all — of a system build. Built to pay for itself through recovered opportunities, faster follow-up, and more closed business.</p>
+ <div class="calc-wrap reveal">
+  <div class="calc-form">
+   <div class="cf"><label>Average profit per completed job <span>$</span></label><input id="c_profit" type="number" inputmode="numeric" value="3500"/></div>
+   <div class="cf"><label>Monthly lead volume <span>leads / mo</span></label><input id="c_leads" type="number" inputmode="numeric" value="200"/></div>
+   <div class="cf"><label>Estimated missed or abandoned leads <span>leads / mo</span></label><input id="c_missed" type="number" inputmode="numeric" value="60"/></div>
+   <div class="cf"><label>Current close rate <span>% of worked leads</span></label><input id="c_cur" type="number" inputmode="numeric" value="8"/></div>
+   <div class="cf"><label>Desired close rate <span>%</span></label><input id="c_des" type="number" inputmode="numeric" value="12"/></div>
+   <div class="cf"><label>Proposed system-build price <span>$</span></label><input id="c_price" type="number" inputmode="numeric" value="15000"/></div>
+  </div>
+  <div class="calc-out">
+   <div class="k">Your estimate</div>
+   <div class="calc-metric"><div class="lbl">Estimated monthly opportunity leakage</div><div class="val leak" id="o_leak">—</div></div>
+   <div class="calc-metric"><div class="lbl">Estimated additional closes / month</div><div class="val close" id="o_close">—</div></div>
+   <div class="calc-metric"><div class="lbl">Estimated monthly recovered profit</div><div class="val close" id="o_profit">—</div></div>
+   <div class="calc-metric" style="border-bottom:none"><div class="lbl">Estimated time to recover the build</div><div class="val pay" id="o_pay">—</div></div>
+   <p class="calc-disc">Estimate only, based on the numbers you entered. Not a guarantee of revenue or results. Actual outcomes depend on your market, offer, team, and execution.</p>
+   <button class="btn btn-solid-cyan" style="width:100%;margin-top:16px" data-scroll="#vertical">Calculate What My Leaks Cost → Build My Pipeline</button>
+  </div>
+ </div>
+</div></section>
+
+<!-- FOUNDER -->
+<section id="founder" class="act act-dark" data-theme="dark"><div class="wrap">
+ <div class="eyebrow sec-eyebrow reveal">Who you actually deal with</div>
+ <h2 class="serif big-line reveal">No account-manager maze. No forty-page deck.</h2>
+ <p class="reveal" style="max-width:58ch;margin-top:16px;font-size:18px;color:var(--silver)">You speak directly with the people architecting and building the system. We scope it, wire it, test it, launch it — and stay close enough to know when something breaks.</p>
+ <div class="contact-cta reveal" style="margin-top:24px"><a class="btn btn-solid-cyan" href="tel:+18336619292">Talk to Amit</a><a class="btn btn-ghost" href="sms:+18336619292">Text AZD</a></div>
+</div></section>
+
+<!-- FINAL CONVERSION (galaxy) -->
+<section id="contact" class="act galaxy" data-theme="dark"><canvas class="stars" data-stars></canvas><div class="wrap" style="position:relative;z-index:2">
+ <div class="eyebrow reveal" style="color:var(--cyan)">The destination</div>
+ <h2 class="serif big-line reveal" style="color:var(--mineral);max-width:22ch">Your territory is already full of opportunities. Let's go create the conversations.</h2>
+ <p class="reveal" style="color:var(--silver);max-width:64ch;margin-top:14px;font-size:18px">Choose the market, filters, appointment target, and sales capacity. AZD builds the campaign, works the territory, confirms the opportunities, and moves them into your pipeline.</p>
+ <svg class="reveal" viewBox="0 0 920 150" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="width:100%;max-width:720px;margin:26px 0 6px;overflow:visible">
+   <g stroke="#2C6BFF" stroke-width="1.2" fill="none" opacity=".55"><path d="M40 30 L300 75"/><path d="M40 120 L300 75"/><path d="M120 20 L300 75"/><path d="M120 130 L300 75"/><path d="M300 75 L560 75"/><path d="M560 75 L820 40"/><path d="M560 75 L820 75"/><path d="M560 75 L820 110"/></g>
+   <g fill="#C4CCD6"><circle cx="40" cy="30" r="3"/><circle cx="40" cy="120" r="3"/><circle cx="120" cy="20" r="3"/><circle cx="120" cy="130" r="3"/></g>
+   <circle cx="300" cy="75" r="5" fill="#38E1D6"/><circle cx="560" cy="75" r="5" fill="#38E1D6"/>
+   <g fill="#12B981"><circle cx="820" cy="40" r="6"/><circle cx="820" cy="75" r="6"/><circle cx="820" cy="110" r="6"/></g>
+   <text x="34" y="150" fill="#8A93A1" font-family="JetBrains Mono, monospace" font-size="11">territory</text>
+   <text x="252" y="150" fill="#8A93A1" font-family="JetBrains Mono, monospace" font-size="11">calls converge</text>
+   <text x="690" y="150" fill="#12B981" font-family="JetBrains Mono, monospace" font-size="11">confirmed appointments</text>
+ </svg>
+ <div class="contact-cta reveal" style="margin-top:16px">
+  <button class="btn btn-solid-cyan" data-scroll="#builder">Build My Exclusive Campaign</button>
+  <a class="btn btn-ghost" href="tel:+18336619292">Talk Directly to Amit</a>
+  <button class="btn btn-ghost" data-scroll="#gterms">See the AZD Show-Up Guarantee&trade;</button>
+ </div>
+ <div class="contact-cta reveal" style="margin-top:12px">
+  <button class="btn btn-ghost" id="scopeBtn">Request a Written Scope</button>
+  <button class="btn btn-ghost" id="customBtn">Custom Project</button>
+  <a class="btn btn-ghost" href="sms:+18336619292">Text AZD</a>
+  <a class="btn btn-ghost" href="tel:+18336619292">Call AZD</a>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div>
+   <div class="fbrand">AZD Global</div>
+   <p style="max-width:330px;opacity:.85">The data, calling, follow-up and contact-center system that keeps your pipeline moving — built and operated.</p>
+   <div style="margin-top:14px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;line-height:1.8;color:var(--silver)">AZD Global Enterprises, Inc. — Delaware C-Corporation<br/>244 5th Ave, STE 1855, New York, NY 10001<br/>+1 (833) 661-9292 · contact@azdglobal.com</div>
+  </div>
+  <div><h4>Industries</h4><a data-scroll="#vertical" data-ind="roofing">Roofing</a><a data-scroll="#vertical" data-ind="exteriors">Exteriors</a><a data-scroll="#vertical" data-ind="solar">Solar</a><a data-scroll="#vertical" data-ind="insurance">Insurance</a><a data-scroll="#vertical" data-ind="realestate">Real Estate</a><a data-scroll="#vertical" data-ind="hvac">HVAC</a></div>
+  <div><h4>System</h4><a data-scroll="#products">TruuOwner™</a><a data-scroll="#products">PowerLine™</a><a data-scroll="#products">Contact Center Buildout</a><a data-scroll="#calc">Lost-lead calculator</a></div>
+  <div><h4>Company</h4><a href="tel:+18336619292">Call Amit</a><a href="sms:+18336619292">Text us</a><a>Careers</a><a>Partners</a></div>
+ </div>
+ <div class="fbottom"><span>© 2026 AZD Global Enterprises, Inc.</span><span>Staging preview · vertical sales narrative v2 · no red brand color</span></div>
+</div></footer>
+
+<!-- MOBILE STICKY BAR -->
+<nav class="mbar">
+ <a href="tel:+18336619292">📞<span>Call AZD</span></a>
+ <a href="sms:+18336619292">✉<span>Text AZD</span></a>
+ <a class="fix" data-scroll="#vertical">▲<span>Fix My Pipeline</span></a>
+</nav>
+
+<!-- MODAL -->
+<div class="modal" id="modal"><div class="sheet">
+ <button class="close" id="mClose" aria-label="Close">×</button>
+ <div id="mBody">
+  <div class="sk" id="mKick">Roofing intake</div>
+  <h3 class="serif" id="mTitle">Build my pipeline</h3>
+  <div class="sd" id="mDesc">Six quick questions. We reply within one business day with a written scope — no generic proposal.</div>
+  <form id="mForm"><div id="mFields"></div>
+   <div class="field"><label>Your name &amp; best number</label><input required placeholder="Name · phone"/></div>
+   <button type="submit" class="btn btn-primary submit">Send &amp; get my written scope</button>
+   <div class="stagetag">Staging preview — this form is a working demo; submissions aren't sent anywhere yet.</div>
+  </form>
+ </div>
+ <div class="done" id="mDone">
+  <div class="serif big">Got it.</div>
+  <div class="sm">On the live site this routes straight to Amit with your answers attached. For now it's a staging preview — nothing was sent.</div>
+  <button class="btn btn-ink" id="mDoneClose" style="margin-top:18px">Close</button>
+ </div>
+</div></div>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+ var IND={
+  roofing:{name:'Roofing',head:"The storm passed. Your leads are still sitting in a spreadsheet.",
+   pain:"Your reps are knocking random doors. Missed calls are going to voicemail. Estimates aren't being followed up. Old leads are dying because everyone's chasing the newest storm.",
+   out:"AZD gives you targeted homeowner data, organized campaigns, rapid callbacks, appointment confirmation, estimate follow-up, and a pipeline your team can't quietly ignore.",
+   chips:["Targeted homeowner data","Organized campaigns","Rapid callbacks","Appt confirmation","Estimate follow-up","Accountable pipeline"],
+   pay:"// Recover a few storm leads a month and the build starts covering itself — one signed roof is usually worth more than the fix.",
+   cta:"Build My Roofing Pipeline",
+   flow:[["01","Data in","Storm-area homeowners, targeted"],["02","Speed-to-lead","Missed calls returned in minutes"],["03","Follow-up","Estimates chased until answered"],["04","Booked","Confirmed, tracked appointments"]],
+   form:[["Service area","text","City / metro / radius"],["Average job size","text","$"],["Monthly leads","number","leads / mo"],["Lead sources","text","door, storm, ads, referral…"],["Number of setters","number","#"],["Number of closers","number","#"],["Current CRM","text","which CRM today"],["Current dialer","text","which dialer today"],["Biggest leak","text","where jobs slip today"]]},
+  exteriors:{name:'Exterior Remodeling',head:"You already paid for the lead. Why are you paying to lose it?",
+   pain:"Windows, siding, gutters, doors and remodeling leads are expensive. One call isn't follow-up. One estimate isn't a sales process. And that rehash list sitting untouched is still money.",
+   out:"AZD keeps prospects moving through calling, SMS, appointment reminders, estimate follow-up, old-lead reactivation, and clean handoffs between setters and closers.",
+   chips:["Calling + SMS","Appt reminders","Estimate follow-up","Old-lead reactivation","Setter→closer handoff","Rehash campaigns"],
+   pay:"// One recovered remodel usually dwarfs a month of the system. The rehash list alone is often the payback.",
+   cta:"Recover My Dead Leads",
+   flow:[["01","Paid lead in","Every source, one pipeline"],["02","Multi-touch","Call + text until they answer"],["03","Estimate follow","Second and third call, automated"],["04","Rehash","Old quotes reactivated"]],
+   form:[["Service area","text","City / metro / radius"],["Average job size","text","$"],["Monthly leads","number","leads / mo"],["Lead sources","text","ads, referral, events…"],["Number of setters","number","#"],["Number of closers","number","#"],["Current CRM","text","which CRM today"],["Current dialer","text","which dialer today"],["Biggest leak","text","where jobs slip today"]]},
+  solar:{name:'Solar',head:"Your setters shouldn't spend the day calling renters, bad territories, and people who never confirm.",
+   pain:"Solar teams bleed money through slow speed-to-lead, recycled lists, appointment no-shows, weak qualification, and broken setter-to-closer handoffs.",
+   out:"AZD connects homeowner targeting, territory filters, campaigns, confirmations, callback sequences, lead recycling, and appointment tracking.",
+   chips:["Homeowner targeting","Territory filters","Confirmations","Callback sequences","Lead recycling","Appt tracking"],
+   pay:"// Fewer no-shows and one more install a month can carry the whole build in most solar margins.",
+   cta:"Build My Solar Appointment Engine",
+   flow:[["01","Qualified in","Homeowners, right territory"],["02","Speed-to-lead","Contacted before they cool"],["03","Confirm","No-show reduction sequences"],["04","Handoff","Clean setter→closer pass"]],
+   form:[["Territories","text","zips / metros you cover"],["Homeowner or renter targeting","text","how you target"],["Lead sources","text","ads, aggregators, DTD…"],["Number of setters","number","#"],["Number of closers","number","#"],["No-show rate","text","% roughly"],["Qualification problems","text","what is slipping through"],["Current CRM","text","which CRM"],["Current dialer","text","which dialer"]]},
+  insurance:{name:'Insurance',head:"The quote was sent. Then everyone forgot about it.",
+   pain:"Unworked leads, unfinished quotes, missed renewals, weak cross-sell, licensing confusion, and scattered spreadsheets quietly drain an agency every month.",
+   out:"AZD routes opportunities to the right agent, follows up consistently, revives older leads, supports renewal campaigns, and keeps every prospect visible until they buy or clearly decline.",
+   chips:["Agent routing","Consistent follow-up","Lead revival","Renewal campaigns","Cross-sell prompts","Full visibility"],
+   pay:"// A handful of bound policies a month — and saved renewals — typically offset a meaningful part of the build.",
+   cta:"Stop Losing Quotes",
+   flow:[["01","Routed","Right agent, right license"],["02","Followed up","Every quote worked to a yes/no"],["03","Renewals","Campaigns before lapse"],["04","Revival","Old leads back in motion"]],
+   form:[["Lines sold","text","auto, home, life, commercial…"],["Licensed states","text","which states"],["Monthly lead volume","number","leads / mo"],["Quote follow-up process","text","how it works today"],["Renewal process","text","how it works today"],["Current CRM","text","which CRM"],["Number of agents","number","#"]]},
+  realestate:{name:'Real Estate',head:"The seller hired the agent who answered first.",
+   pain:"You're at a showing when the phone rings. New inquiries go cold. Old homeowners never get nurtured. Your database turns into a cemetery full of people nobody called again.",
+   out:"AZD builds homeowner targeting, immediate response, appointment setting, long-term nurture, missed-call recovery, and live handoff.",
+   chips:["Homeowner targeting","Immediate response","Appt setting","Long-term nurture","Missed-call recovery","Live handoff"],
+   pay:"// One extra listing or closing usually covers the build many times over.",
+   cta:"Build My Seller Pipeline",
+   flow:[["01","Targeted","Likely sellers, not everyone"],["02","Answered first","Instant response wins the listing"],["03","Nurtured","Database worked long-term"],["04","Handoff","Warm transfer to you"]],
+   form:[["Market","text","city / metro"],["Buyer, seller, investor, or mixed","text","which"],["Lead sources","text","portals, ads, sphere…"],["Average response speed","text","how fast today"],["Database size","number","contacts"],["Number of agents","number","#"],["Current CRM","text","which CRM"]]},
+  hvac:{name:'HVAC',head:"The emergency call hit voicemail. The replacement estimate never got another call.",
+   pain:"Seasonal spikes overwhelm the office. After-hours opportunities disappear. Unsold estimates gather dust. Maintenance customers aren't reactivated until they call someone else.",
+   out:"AZD provides call routing, appointment booking, missed-call recovery, estimate follow-up, seasonal campaigns, maintenance reminders, and replacement-opportunity workflows.",
+   chips:["Call routing","Appt booking","Missed-call recovery","Estimate follow-up","Seasonal campaigns","Maintenance reminders"],
+   pay:"// One recovered replacement — or a reactivated maintenance base — often carries the build in a season.",
+   cta:"Stop Missing HVAC Jobs",
+   flow:[["01","Answered","After-hours + overflow routed"],["02","Booked","Emergency + install scheduling"],["03","Estimate follow","Unsold quotes chased"],["04","Reactivate","Maintenance base worked"]],
+   form:[["Service area","text","city / metro / radius"],["Emergency handling","text","how you handle emergencies"],["After-hours handling","text","how it works today"],["Monthly calls","number","calls / mo"],["Unsold estimates","text","roughly how many pending"],["Maintenance-plan database","number","members"],["Dispatch system","text","which system"],["Current CRM","text","which CRM"]]}
+ };
+
+ var CUSTOM={name:'Custom project',cta:'Send my project brief',form:[["What is broken","text","the core problem"],["Desired outcome","text","what good looks like"],["Current tools","text","CRM, dialer, data, etc."],["Team size","number","#"],["Timeline","text","when you need it"],["Budget range","text","rough range"],["Best contact method","text","call, text, email"]]};
+ var cur='roofing';
+ function esc(s){return s;}
+ function render(ind){
+  cur=ind;var d=IND[ind];
+  document.getElementById('vKick').textContent=d.name;
+  document.getElementById('vHead').textContent=d.head;
+  document.getElementById('vPain').textContent=d.pain;
+  document.getElementById('vOut').textContent=d.out;
+  document.getElementById('vPay').textContent=d.pay;
+  var c=document.getElementById('vChips');c.innerHTML='';d.chips.forEach(function(x){var s=document.createElement('span');s.textContent=x;c.appendChild(s);});
+  var f=document.getElementById('vFlow');f.innerHTML='';d.flow.forEach(function(r){f.insertAdjacentHTML('beforeend','<div class="vstage"><div class="ic">'+r[0]+'</div><div class="t"><b>'+r[1]+'</b><span>'+r[2]+'</span></div><div class="st">on</div></div>');});
+  var b=document.getElementById('vCta');b.textContent=d.cta;
+  document.querySelectorAll('.ind-tab').forEach(function(t){t.classList.toggle('on',t.getAttribute('data-ind')===ind);});
+ }
+ render('roofing');
+
+ document.getElementById('indTabs').addEventListener('click',function(e){
+  var t=e.target.closest('.ind-tab');if(!t)return;render(t.getAttribute('data-ind'));
+  document.getElementById('vertical').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+ });
+ document.getElementById('vCta').addEventListener('click',function(){openForm(cur);});
+
+ // MODAL / forms
+ var modal=document.getElementById('modal');
+ function openForm(ind){
+  var d=(ind==='custom')?CUSTOM:IND[ind];
+  document.getElementById('mKick').textContent=d.name+' intake';
+  document.getElementById('mTitle').textContent=d.cta;
+  var mf=document.getElementById('mFields');mf.innerHTML='';
+  d.form.forEach(function(fld){
+   mf.insertAdjacentHTML('beforeend','<div class="field"><label>'+fld[0]+'</label><input type="'+fld[1]+'" placeholder="'+fld[2]+'"/></div>');
+  });
+  document.getElementById('mForm').style.display='';document.getElementById('mDone').classList.remove('on');
+  modal.classList.add('open');
+ }
+ document.getElementById('mClose').onclick=function(){modal.classList.remove('open');};
+ document.getElementById('mDoneClose').onclick=function(){modal.classList.remove('open');};
+ modal.addEventListener('click',function(e){if(e.target===modal)modal.classList.remove('open');});
+ document.getElementById('mForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('mForm').style.display='none';document.getElementById('mDone').classList.add('on');});
+ var sb=document.getElementById('scopeBtn');if(sb)sb.onclick=function(){openForm(cur);};
+ var cb=document.getElementById('customBtn');if(cb)cb.onclick=function(){openForm('custom');};
+ document.querySelectorAll('[data-openform]').forEach(function(el){el.addEventListener('click',function(){openForm(cur);});});
+ var p2=document.getElementById('proc2');if(p2){var p2io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){p2.classList.add('in');p2io.unobserve(e.target);}});},{threshold:.3});p2io.observe(p2);}
+
+ // scroll buttons + industry deep-links
+ document.querySelectorAll('[data-scroll]').forEach(function(el){el.addEventListener('click',function(){
+  var ind=el.getAttribute('data-ind');if(ind)render(ind);
+  var t=document.querySelector(el.getAttribute('data-scroll'));if(t)t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+ });});
+
+ // CALCULATOR
+ function money(n){return '$'+Math.round(n).toLocaleString('en-US');}
+ function animateVal(id,target,fmt){var el=document.getElementById(id);if(!el)return;var start=el._v||0;if(reduce||!isFinite(target)){el._v=target;el.textContent=fmt(target);return;}var t0=null,dur=520;if(el._raf)cancelAnimationFrame(el._raf);function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);var e=1-Math.pow(1-p,3);el.textContent=fmt(start+(target-start)*e);if(p<1){el._raf=requestAnimationFrame(step);}else{el._v=target;el.textContent=fmt(target);}}el._raf=requestAnimationFrame(step);}
+ function calc(){
+  var P=+v('c_profit'),L=+v('c_leads'),M=+v('c_missed'),c=+v('c_cur'),des=+v('c_des'),S=+v('c_price');
+  M=Math.min(M,L);
+  var leak=M*(c/100)*P;                                  // profit lost from missed/abandoned leads at current close
+  var worked=Math.max(0,L-M);
+  var addl=Math.max(0, L*(des/100) - worked*(c/100));    // extra closes from recovering missed + lifting rate
+  var addlProfit=addl*P;
+  var months=addlProfit>0 ? S/addlProfit : 0;
+  animateVal('o_leak', isFinite(leak)?leak:0, function(x){return money(x)+' /mo';});
+  animateVal('o_close', isFinite(addl)?addl:0, function(x){return '+'+x.toFixed(1)+' /mo';});
+  animateVal('o_profit', isFinite(addlProfit)?addlProfit:0, function(x){return money(x)+' /mo';});
+  animateVal('o_pay', months>0?months:0, function(x){return (months<=0)?'—':(x<1?'< 1 month':x.toFixed(1)+' months');});
+ }
+ function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)?0:x;}
+ ['c_profit','c_leads','c_missed','c_cur','c_des','c_price'].forEach(function(id){document.getElementById(id).addEventListener('input',calc);});
+ calc();
+
+ // header theme swap + reveal + hero field
+ var header=document.getElementById('header'),sections=[].slice.call(document.querySelectorAll('[data-theme]'));
+ function tt(){var y=74,cur='dark';sections.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=y&&r.bottom>y)cur=s.getAttribute('data-theme');});header.classList.toggle('on-dark',cur==='dark');}
+ addEventListener('scroll',tt,{passive:true});tt();
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+ var field=document.getElementById('field');
+ if(field){for(var i=0;i<30;i++){var c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',Math.random()*1440);c.setAttribute('cy',Math.random()*900);c.setAttribute('r',Math.random()*2+1.3);c.setAttribute('fill',i%6===0?'#38E1D6':'#31465b');field.appendChild(c);}}
+
+ // ---- campaign builder ----
+ var bgo=document.getElementById('b_go');
+ if(bgo){bgo.addEventListener('click',function(){
+   function val(id){var e=document.getElementById(id);return e?(e.value||'').trim():'';}
+   var qty=parseInt(val('b_qty'),10);
+   var pkg,price;
+   if(!qty||isNaN(qty)){pkg='Custom Campaign (ongoing)';price='$75 / meeting or $2,000 / mo';}
+   else if(qty<=12){pkg='Market Entry Pack';price='$2,100 (12 appointments)';}
+   else if(qty<=25){pkg='Pipeline Growth Pack';price='$3,625 (25 appointments)';}
+   else {pkg='Territory Domination Pack';price='$6,000 (50 appointments)';}
+   var terr=[val('b_state'),val('b_zip')].filter(Boolean).join(' · ')||'—';
+   var radius=val('b_radius')?(' · within '+val('b_radius')+' mi'):'';
+   var filt=[val('b_ptype'),val('b_owner'),val('b_value')&&('value '+val('b_value')),val('b_equity')&&('equity '+val('b_equity')),val('b_tenure')&&('tenure '+val('b_tenure')),val('b_roof')&&('roof '+val('b_roof')),val('b_service'),val('b_profile')].filter(Boolean).join(', ')||'—';
+   var target=(qty&&!isNaN(qty))?(qty+' confirmed appointments'):'ongoing monthly campaign';
+   var perWeek=(qty&&!isNaN(qty))?Math.max(1,Math.round(qty/4)):0;
+   var recCap=perWeek?('plan for ~'+perWeek+' appointments / week'):'set weekly volume with your rep';
+   var cap=val('b_cap');
+   var rows=[['Industry',val('b_ind')||'—'],['Territory',terr+radius],['Filters',filt],['Appointment target',target],['Recommended package',pkg],['Estimated campaign setup',price],['Recommended sales capacity',recCap+(cap?(' · you said: '+cap):'')],['Confirmation',val('b_conf')||'Call + SMS'],['CRM / calendar',[val('b_crm'),val('b_cal')].filter(Boolean).join(' / ')||'—'],['Start',val('b_start')||'—']];
+   document.getElementById('b_rows').innerHTML=rows.map(function(r){return '<div class="brow"><b>'+r[0]+'</b><span class="v">'+r[1]+'</span></div>';}).join('');
+   var bi=val('b_ind'); if(bi&&IND[bi]){cur=bi; try{render(bi);}catch(e){}}
+   var out=document.getElementById('b_out');out.classList.add('on');out.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+ });}
+
+ // ---- galaxy starfields ----
+ (function(){
+   var canvases=[].slice.call(document.querySelectorAll('canvas[data-stars]'));
+   if(!canvases.length)return;
+   var dpr=Math.min(2,window.devicePixelRatio||1);
+   var sets=canvases.map(function(cv){var ctx=cv.getContext('2d');var stars=[];
+     function resize(){var r=cv.getBoundingClientRect();cv.width=Math.max(1,r.width*dpr);cv.height=Math.max(1,r.height*dpr);
+       var n=Math.min(140,Math.round(r.width*r.height/9000));stars=[];
+       for(var i=0;i<n;i++){stars.push({x:Math.random()*cv.width,y:Math.random()*cv.height,z:Math.random()*0.8+0.2,r:(Math.random()*1.2+0.3)*dpr,c:(i%9===0?1:(i%17===0?2:0))});}}
+     resize();addEventListener('resize',resize);return {cv:cv,ctx:ctx,stars:function(){return stars;}};});
+   var mx=0,my=0;
+   if(!reduce){addEventListener('mousemove',function(e){mx=(e.clientX/innerWidth-0.5);my=(e.clientY/innerHeight-0.5);},{passive:true});}
+   var cols=['rgba(244,242,236,','rgba(56,225,214,','rgba(124,92,255,'];
+   function frame(){sets.forEach(function(s){var ctx=s.ctx,st=s.stars();ctx.clearRect(0,0,s.cv.width,s.cv.height);
+     for(var i=0;i<st.length;i++){var p=st[i];if(!reduce){p.y+=p.z*0.12;if(p.y>s.cv.height)p.y=0;}
+       var px=p.x+mx*28*p.z*dpr,py=p.y+my*28*p.z*dpr;
+       ctx.beginPath();ctx.fillStyle=cols[p.c]+(0.22+p.z*0.6)+')';ctx.arc(px,py,p.r*p.z,0,6.283);ctx.fill();}});
+     if(!reduce)requestAnimationFrame(frame);}
+   requestAnimationFrame(frame);
+ })();
+})();
+</script>
+</body></html>

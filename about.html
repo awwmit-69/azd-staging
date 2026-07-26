@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--mineral:#F4F2EC;--mineral2:#E9E7DF;--ink:#0E1116;--ink2:#20242B;--navy:#0B1B2B;--navy2:#102A40;--gray:#8A93A1;--silver:#C4CCD6;--cobalt:#2C6BFF;--cyan:#38E1D6;--emerald:#12B981;--line:#d9d4c8;--maxw:1160px;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--mineral);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.tmk{font-size:.55em;vertical-align:super;opacity:.65}
+.disp{font-weight:800;letter-spacing:-.022em;line-height:1.04}
+header{position:sticky;top:0;z-index:40;background:rgba(244,242,236,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(14,17,22,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.01em}
+.nav{display:flex;gap:22px;font-size:14px;font-weight:600}
+.nav a{opacity:.8}.nav a:hover{opacity:1;color:var(--cobalt)}
+.navphone{font-size:12px;border:1px solid currentColor;border-radius:100px;padding:8px 14px;opacity:.9}
+.navphone:hover{background:var(--emerald);color:#04140d;border-color:var(--emerald)}
+.hero{padding:70px 0 40px}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cobalt);font-weight:700}
+h1{font-weight:800;letter-spacing:-.024em;line-height:1.03;font-size:clamp(34px,5vw,58px);margin:16px 0 18px}
+.lede{font-size:19px;color:var(--ink2);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 20px;border-radius:11px;border:none;cursor:pointer;transition:transform .2s var(--ease)}
+.btn-primary{background:var(--cobalt);color:#fff}.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+section{padding:56px 0}
+.k{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt);font-weight:700;margin-bottom:14px}
+h2{font-weight:800;letter-spacing:-.02em;font-size:clamp(24px,3.4vw,38px);margin-bottom:16px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid rgba(14,17,22,.1);border-radius:14px;padding:24px;transition:transform .25s var(--ease),border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--cobalt)}
+.card h3{font-weight:800;font-size:19px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--ink2);margin-bottom:8px}
+.price{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:var(--emerald);font-weight:600}
+.chip{display:inline-block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:4px 9px;margin:3px 4px 0 0}
+.cat{background:var(--mineral2);border-radius:16px;padding:26px;margin-bottom:16px}
+.cat h3{font-weight:800;font-size:17px;margin-bottom:12px}
+.li{display:flex;flex-wrap:wrap;gap:7px}
+footer{background:var(--ink);color:var(--gray);padding:48px 0 30px;font-size:14px;margin-top:24px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.09)}
+footer h4{color:var(--silver);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+footer a{display:block;margin-bottom:8px;opacity:.85}footer a:hover{opacity:1;color:var(--cyan)}
+.fbrand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--mineral);margin-bottom:12px}
+.fid{margin-top:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;line-height:1.8;color:var(--silver)}
+.fbottom{padding-top:18px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px}
+@media(max-width:860px){.g2,.g3{grid-template-columns:1fr}.nav{display:none}.fg{grid-template-columns:1fr}}
+</style><title>About — AZD Global Enterprises, Inc.</title></head><body>
+<header><div class="wrap"><a class="brand" href="index.html"> AZD&nbsp;Global</a><nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="industries.html">Industries</a><a href="about.html">About</a></nav><a class="navphone" href="tel:+18336619292">Call AZD · (833) 661-9292</a></div></header>
+<section class="hero"><div class="wrap">
+ <div class="eyebrow">About AZD Global</div>
+ <h1>We build and operate the systems that make revenue teams actually work.</h1>
+ <p class="lede">AZD Global Enterprises, Inc. is a technology-enabled B2B company that develops, implements, manages, and supports the data, communications, CRM, and contact-center infrastructure small and mid-sized businesses run on.</p>
+</div></section>
+<section><div class="wrap">
+ <div class="k">What we do</div>
+ <h2>Not a consultant. Not a BPO. Not just software.</h2>
+ <p class="lede" style="margin-bottom:18px">AZD stops paid leads, missed calls, forgotten follow-up, scattered data, and disconnected tools from bleeding revenue — and helps owners build businesses that keep moving when they leave the room. We build and operate the connected systems that make data, calling, CRM, campaigns, and reporting work together.</p>
+ <div class="li">
+  <span class="chip">CRM systems</span><span class="chip">Business-process automation</span><span class="chip">Lead-management infrastructure</span><span class="chip">Data organization &amp; analytics</span><span class="chip">Digital communications</span><span class="chip">Sales operations</span><span class="chip">Reporting environments</span><span class="chip">Contact-center systems</span><span class="chip">Campaign operations</span><span class="chip">Workflow implementation</span><span class="chip">Operational support</span>
+ </div>
+</div></section>
+<section><div class="wrap">
+ <div class="k">Founder-led</div>
+ <h2>Direct access. No account-manager maze.</h2>
+ <div class="grid g2">
+  <div class="card"><h3>Amit — Founder &amp; CEO</h3><p>A H M Shahedul Alom (Amit) founded AZD Global and leads strategy, architecture, implementation, and operation under one roof. You speak directly with the people building your system — not a rotating account manager or a forty-page deck.</p><p class="mono" style="color:var(--gray)">Founder · CEO · President · Treasurer · Secretary · Sole director</p></div>
+  <div class="card"><h3>How we operate</h3><p>Built by operators, not slide-deck consultants. We scope it in writing, wire it, test it end-to-end, launch it, and stay close enough to know when something breaks.</p><p><a class="price" href="tel:+18336619292">Talk to Amit → (833) 661-9292</a></p></div>
+ </div>
+</div></section>
+<section><div class="wrap">
+ <div class="k">Reach</div>
+ <h2>U.S.-led, built to serve internationally.</h2>
+ <p class="lede">AZD Global is U.S.-led, with the capability to serve businesses in the United Kingdom, Canada, Australia, and other international markets.</p>
+</div></section>
+<section><div class="wrap">
+ <div class="k">Company information</div>
+ <h2>The legal facts.</h2>
+ <div class="grid g2">
+  <div class="card"><h3>Entity</h3><p><b>AZD Global Enterprises, Inc.</b> — Delaware C-Corporation.<br/>Formed June 8, 2026 · Delaware file no. 10653494.</p></div>
+  <div class="card"><h3>Contact</h3><p>244 5th Ave, STE 1855, New York, NY 10001<br/>+1 (833) 661-9292 · contact@azdglobal.com<br/>https://www.azdglobal.com</p></div>
+ </div>
+ <div style="margin-top:20px"><a class="btn btn-primary" href="index.html#campaigns">Start a Project</a> <a class="btn btn-ghost" href="services.html">See Services</a></div>
+</div></section>
+<footer><div class="wrap"><div class="fg"><div><div class="fbrand"> AZD Global</div><p style="max-width:320px;opacity:.85">The data, calling, follow-up and contact-center system that keeps your pipeline moving — built and operated.</p><div class="fid">AZD Global Enterprises, Inc. — Delaware C-Corporation<br/>244 5th Ave, STE 1855, New York, NY 10001<br/>+1 (833) 661-9292 · contact@azdglobal.com</div></div><div><h4>Explore</h4><a href="services.html">Services</a><a href="industries.html">Industries</a><a href="about.html">About</a><a href="index.html#calc">Lost-lead calculator</a></div><div><h4>Talk to us</h4><a href="tel:+18336619292">Call AZD</a><a href="sms:+18336619292">Text AZD</a><a href="mailto:contact@azdglobal.com">Email</a></div></div><div class="fbottom">© 2026 AZD Global Enterprises, Inc. · Staging preview</div></div></footer>
+</body></html>

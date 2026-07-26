@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--mineral:#F4F2EC;--mineral2:#E9E7DF;--ink:#0E1116;--ink2:#20242B;--navy:#0B1B2B;--navy2:#102A40;--gray:#8A93A1;--silver:#C4CCD6;--cobalt:#2C6BFF;--cyan:#38E1D6;--emerald:#12B981;--line:#d9d4c8;--maxw:1160px;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--mineral);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.tmk{font-size:.55em;vertical-align:super;opacity:.65}
+.disp{font-weight:800;letter-spacing:-.022em;line-height:1.04}
+header{position:sticky;top:0;z-index:40;background:rgba(244,242,236,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(14,17,22,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.01em}
+.nav{display:flex;gap:22px;font-size:14px;font-weight:600}
+.nav a{opacity:.8}.nav a:hover{opacity:1;color:var(--cobalt)}
+.navphone{font-size:12px;border:1px solid currentColor;border-radius:100px;padding:8px 14px;opacity:.9}
+.navphone:hover{background:var(--emerald);color:#04140d;border-color:var(--emerald)}
+.hero{padding:70px 0 40px}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cobalt);font-weight:700}
+h1{font-weight:800;letter-spacing:-.024em;line-height:1.03;font-size:clamp(34px,5vw,58px);margin:16px 0 18px}
+.lede{font-size:19px;color:var(--ink2);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 20px;border-radius:11px;border:none;cursor:pointer;transition:transform .2s var(--ease)}
+.btn-primary{background:var(--cobalt);color:#fff}.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+section{padding:56px 0}
+.k{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt);font-weight:700;margin-bottom:14px}
+h2{font-weight:800;letter-spacing:-.02em;font-size:clamp(24px,3.4vw,38px);margin-bottom:16px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid rgba(14,17,22,.1);border-radius:14px;padding:24px;transition:transform .25s var(--ease),border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--cobalt)}
+.card h3{font-weight:800;font-size:19px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--ink2);margin-bottom:8px}
+.price{font-family:'Manrope',sans-serif;font-size:14px;color:var(--cobalt);font-weight:800}
+.chip{display:inline-block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:4px 9px;margin:3px 4px 0 0}
+.cat{background:var(--mineral2);border-radius:16px;padding:26px;margin-bottom:16px}
+.cat h3{font-weight:800;font-size:17px;margin-bottom:12px}
+.li{display:flex;flex-wrap:wrap;gap:7px}
+footer{background:var(--ink);color:var(--gray);padding:48px 0 30px;font-size:14px;margin-top:24px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.09)}
+footer h4{color:var(--silver);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+footer a{display:block;margin-bottom:8px;opacity:.85}footer a:hover{opacity:1;color:var(--cyan)}
+.fbrand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--mineral);margin-bottom:12px}
+.fid{margin-top:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;line-height:1.8;color:var(--silver)}
+.fbottom{padding-top:18px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px}
+@media(max-width:860px){.g2,.g3{grid-template-columns:1fr}.nav{display:none}.fg{grid-template-columns:1fr}}
+</style><title>Services — AZD Global</title></head><body>
+<header><div class="wrap"><a class="brand" href="index.html"> AZD&nbsp;Global</a><nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="industries.html">Industries</a><a href="about.html">About</a></nav><a class="navphone" href="tel:+18336619292">Call AZD · (833) 661-9292</a></div></header>
+<section class="hero"><div class="wrap">
+ <div class="eyebrow">Services</div>
+ <h1>Every system we build, connect, and operate.</h1>
+ <p class="lede">Featured offers carry live pricing from our billing system. Everything else is scoped to your operation — tell us where you're leaking and we'll quote it in writing.</p>
+ <div style="margin-top:18px"><a class="btn btn-primary" href="index.html#calc">Calculate What My Leaks Cost</a> <a class="btn btn-ghost" href="tel:+18336619292">Talk to Amit</a></div>
+</div></section>
+
+<section style="background:#070b12;color:#F4F2EC;position:relative;overflow:hidden">
+ <div style="position:absolute;inset:0;background:radial-gradient(1000px 600px at 80% -10%,rgba(44,107,255,.2),transparent 60%),radial-gradient(800px 500px at 10% 10%,rgba(124,92,255,.16),transparent 58%)"></div>
+ <div class="wrap" style="position:relative;z-index:2">
+  <div class="k" style="color:#38E1D6">Exclusive Territory Appointment Campaigns</div>
+  <h2 style="color:#F4F2EC">Your market. Your filters. Your appointments.</h2>
+  <p style="color:#C4CCD6;max-width:64ch">Stop buying the same lead as five other companies. We build the audience, call your selected territory, qualify, book, confirm, and deliver appointments into your calendar — covered by the AZD Show-Up Guarantee™. Not shared marketplace leads.</p>
+  <div class="grid g2" style="margin-top:18px">
+   <div class="card"><h3>Custom Campaign</h3><p>Flexible, ongoing exclusive outbound campaign built to your territory &amp; filters.</p><div class="price">$75 / qualified meeting · or $2,000 / mo</div><p style="margin-top:12px"><a class="btn btn-primary" href="index.html#builder">Build My Territory Campaign</a></p></div>
+   <div class="card"><h3>Market Entry Pack</h3><p>Test a new territory, offer, or service area.</p><div class="price">12 confirmed appointments · $2,100</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#builder">Build</a></p></div>
+   <div class="card"><h3>Pipeline Growth Pack</h3><p>A steady calendar for active sales teams.</p><div class="price">25 confirmed appointments · $3,625</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#builder">Build</a></p></div>
+   <div class="card"><h3>Territory Domination Pack</h3><p>Enter or aggressively work a defined market.</p><div class="price">50 confirmed appointments · $6,000</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#builder">Build</a></p></div>
+  </div>
+  <div style="margin-top:18px"><a class="btn btn-primary" href="index.html#builder">Build My Territory Campaign</a> <a class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:#fff" href="index.html#gterms">See the Show-Up Guarantee</a></div>
+ </div>
+</section>
+<section><div class="wrap">
+ <div class="k">TruuOwner™ — Data in</div>
+ <h2>The right prospects enter the machine.</h2>
+ <div class="grid g3">
+  <div class="card"><h3>Audience Intelligence — Per Record</h3><p>Campaign-ready homeowner &amp; property data, filtered by ZIP, state, and vertical. Delivered CSV/XLSX.</p><div class="price">from $0.04 / record</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#vertical">Get a Data Sample</a></p></div>
+  <div class="card"><h3>Prospect Research (qualified)</h3><p>B2B audience research and qualified prospect delivery, per program scope.</p><div class="price">$40 / qualified lead · $500 setup · $1,500 / mo</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#vertical">Build My Audience</a></p></div>
+  <div class="card"><h3>Data organization &amp; cleanup</h3><p>Standardization, dedupe, suppression &amp; DNC-support workflows on your existing lists.</p><div class="price">Request a Scope</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="k">PowerLine™ — Movement</div>
+ <h2>Every conversation. One command center.</h2>
+ <div class="grid g3">
+  <div class="card"><h3>PowerLine™ implementation</h3><p>Calls, messages, voicemail, contacts, campaigns, agents and follow-up — configured on your numbers and providers.</p><div class="price">Request a Scope</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#products">Open PowerLine Preview</a></p></div>
+  <div class="card"><h3>Dialer / PBX &amp; SIP setup</h3><p>Business calling infrastructure, dialer + PBX provisioning, SIP-provider integration.</p><div class="price">from $1,200 setup</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Build My Calling Stack</a></p></div>
+  <div class="card"><h3>Dialer Maintenance</h3><p>Monthly upkeep: campaigns, lead loading, dispositions, reporting, uptime.</p><div class="price">$850 / mo</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="k">Contact Center Buildout — Installed &amp; operated</div>
+ <h2>We don't recommend the stack. We build the damn stack.</h2>
+ <div class="grid g3">
+  <div class="card"><h3>Buildout — Setup &amp; Onboarding</h3><p>One-time contact-center buildout: dedicated callers hired + seats provisioned. Leads &amp; data billed separately.</p><div class="price">$1,200 setup</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Build My Contact Center</a></p></div>
+  <div class="card"><h3>Call Center &amp; BPO Staffing</h3><p>Dedicated agent seats under a service agreement — callers, staffing, BPO support.</p><div class="price">$1,000 onboarding · $1,800 / seat / mo</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+  <div class="card"><h3>Operations Management — Full</h3><p>Hands-on ops management: callers, ROI assurance, lead-quality control, sit-rate, cash generation.</p><div class="price">$2,600 / mo</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+  <div class="card"><h3>Exclusive Territory Appointment Campaigns</h3><p>Custom-territory, exclusive outbound campaigns with the AZD Show-Up Guarantee™ — not shared marketplace leads.</p><div class="price">$75/meeting · packs $2,100 / $3,625 / $6,000</div><p style="margin-top:12px"><a class="btn btn-primary" href="index.html#campaigns">See Campaigns →</a></p></div>
+  
+  <div class="card"><h3>Routing, CRM &amp; reporting</h3><p>Call routing, voicemail &amp; missed-call recovery, CRM stages, human + AI agent workflows, dashboards.</p><div class="price">Request a Scope</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="k">Consulting, coaching &amp; growth</div>
+ <h2>Strategy that ends in a working system.</h2>
+ <div class="grid g2">
+  <div class="card"><h3>B2B Consulting</h3><p>Strategic business consulting &amp; advisory, scoped per Statement of Work.</p><div class="price">$2,500 project · or $3,500 / mo retainer</div><p style="margin-top:12px"><a class="btn btn-ghost" href="tel:+18336619292">Talk to Amit</a></p></div>
+  <div class="card"><h3>Systems consulting &amp; coaching</h3><p>Startup systems consulting, hands-on coaching, sales-ops consulting, process redesign, implementation support.</p><div class="price">Request a Scope</div><p style="margin-top:12px"><a class="btn btn-ghost" href="index.html#campaigns">Request a Scope</a></p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="cat"><h3>Full capability list</h3>
+ <div class="li">
+  <span class="chip">Business-process automation</span><span class="chip">Workflow architecture &amp; implementation</span><span class="chip">Cloud-software implementation</span><span class="chip">Operational systems management</span><span class="chip">Remote operations support</span><span class="chip">CRM setup / integration / customization / management</span><span class="chip">Sales-pipeline design</span><span class="chip">Lead routing &amp; assignment</span><span class="chip">Follow-up automation</span><span class="chip">Appointment-setting systems</span><span class="chip">Campaign setup &amp; support</span><span class="chip">Data cleanup &amp; standardization</span><span class="chip">TruuOwner™ data products</span><span class="chip">Suppression &amp; DNC workflows</span><span class="chip">Reporting dashboards &amp; analytics</span><span class="chip">PowerLine™ implementation</span><span class="chip">SIP / provider integration</span><span class="chip">Dialer &amp; PBX setup</span><span class="chip">Inbound &amp; outbound buildouts</span><span class="chip">Call routing</span><span class="chip">Voicemail &amp; missed-call recovery</span><span class="chip">Human + AI agent workflows</span><span class="chip">Technology-enabled consulting</span><span class="chip">Startup systems consulting</span><span class="chip">Sales-operations consulting</span><span class="chip">Process redesign</span>
+ </div></div>
+ <div><a class="btn btn-primary" href="index.html#campaigns">Request a Written Scope</a> <a class="btn btn-ghost" href="industries.html">See Industries</a></div>
+ <p class="mono" style="margin-top:14px;color:var(--gray);font-size:12px">Prices shown are live from our billing system. Some engagements are quoted per Statement of Work.</p>
+</div></section>
+<footer><div class="wrap"><div class="fg"><div><div class="fbrand"> AZD Global</div><p style="max-width:320px;opacity:.85">The data, calling, follow-up and contact-center system that keeps your pipeline moving — built and operated.</p><div class="fid">AZD Global Enterprises, Inc. — Delaware C-Corporation<br/>244 5th Ave, STE 1855, New York, NY 10001<br/>+1 (833) 661-9292 · contact@azdglobal.com</div></div><div><h4>Explore</h4><a href="services.html">Services</a><a href="industries.html">Industries</a><a href="about.html">About</a><a href="index.html#calc">Lost-lead calculator</a></div><div><h4>Talk to us</h4><a href="tel:+18336619292">Call AZD</a><a href="sms:+18336619292">Text AZD</a><a href="mailto:contact@azdglobal.com">Email</a></div></div><div class="fbottom">© 2026 AZD Global Enterprises, Inc. · Staging preview</div></div></footer>
+</body></html>
